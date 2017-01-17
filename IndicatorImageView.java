@@ -67,3 +67,4 @@ public class IndicatorImageView extends ImageView {
 
         return (getWidth() * getHeight()) > (horizontalPadding * verticalPadding);
     }
+}
