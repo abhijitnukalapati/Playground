@@ -2,18 +2,17 @@ import java.util.List;
 import java.util.LinkedList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Iterator;
 
 public class LRUCache<K, V> {
 
-    int capacity;
-    List<V> list;
-    Map<K, V> cache;
+    private int capacity;
+    private List<V> list;
+    private Map<K, V> cache;
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        list = new LinkedList<V>();
-        cache = new HashMap<K, V>();
+        this.list = new LinkedList<V>();
+        this.cache = new HashMap<K, V>();
     }
     
     public V get(K key) {
