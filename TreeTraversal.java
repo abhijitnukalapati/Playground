@@ -25,11 +25,11 @@ public static void breadthFirstSearch(TreeNode node) {
         return;
     }
 
-    LinkedList<TreeNode> queue = new LinkedList<>();
+    Queue<TreeNode> queue = new LinkedList<>();
     queue.add(node);
 
     while(!queue.isEmpty()) {
-        TreeNode treeNode = queue.removeFirst();
+        TreeNode treeNode = queue.poll();
         System.out.println(treeNode.value);
 
         if(treeNode.left != null) {
